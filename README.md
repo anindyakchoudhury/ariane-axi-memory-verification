@@ -36,6 +36,13 @@ Professional verification testbench for AXI4-compliant RAM module used in **Aria
 - ✅ **Ariane Core Integration Ready**: Memory model verified and ready for RISC-V RV64G core integration
 
 ## Architecture Diagram
+
+<p align="center">
+  <img src="docs/Testbench Simulation.JPG" alt="Testbench Simulation" width="800"/>
+  <br>
+  <em>AXI4 Memory Verification Testbench Output Waveform</em>
+</p>
+
 ```
 ┌─────────────────────────────────────┐
 │   VERIFICATION TESTBENCH            │
