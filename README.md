@@ -30,10 +30,10 @@ Professional verification testbench for AXI4-compliant RAM module used in **Aria
 
 ## Impact & Results
 
-- ✅ **Zero Back-Door Access**: Pure protocol-based verification suitable for post-silicon validation
-- ✅ **Full Data Width Coverage**: 8/16/32/64-bit accesses with proper alignment checking
-- ✅ **Production Verification Quality**: Includes timeout watchdogs, comprehensive logging, and automated pass/fail reporting
-- ✅ **Ariane Core Integration Ready**: Memory model verified and ready for RISC-V RV64G core integration
+- **Zero Back-Door Access**: Pure protocol-based verification suitable for post-silicon validation
+- **Full Data Width Coverage**: 8/16/32/64-bit accesses with proper alignment checking
+- **Production Verification Quality**: Includes timeout watchdogs, comprehensive logging, and automated pass/fail reporting
+- **Ariane Core Integration Ready**: Memory model verified and ready for RISC-V RV64G core integration
 
 ## Architecture Diagram
 
@@ -244,5 +244,6 @@ See `mem_model_test_readme.md` for complete limitation analysis and future impro
 **Purpose:** Demonstrating memory subsystem verification expertise for ASIC/FPGA design roles
 
 **Acknowledgments:**  
-RTL components from Pulp Platform's Ariane (CVA6) RISC-V core ecosystem  
-AXI infrastructure from OpenHW Group's CVA6 project
+1. RTL components from Pulp Platform's Ariane (CVA6) RISC-V core ecosystem  
+2. AXI infrastructure from OpenHW Group's CVA6 project
+3. Foez Ahmed - For Review and Debugging
