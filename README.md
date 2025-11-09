@@ -37,54 +37,47 @@ Professional verification testbench for AXI4-compliant RAM module used in **Aria
 
 ## Architecture Diagram
 ```
-┌──────────────────────────────────────────────────────────────────┐
-│                          TESTBENCH                               │
-│  ┌───────────────────────────────────────────────────────────┐   │
-│  │  Test Generator (Randomized Patterns)                     │   │
-│  │  • Address randomization with alignment                   │   │
-│  │  • Data pattern randomization                             │   │
-│  │  • Transfer size randomization (8/16/32/64-bit)           │   │
-│  │  • Uses ariane_axi_pkg::m_req_t/m_resp_t types           │   │
-│  └─────────────────┬─────────────────────────────────────────┘   │
-│                    │ AXI4 Protocol (Pin 3: req_i)                │
-│                    ▼                                              │
-│  ┌───────────────────────────────────────────────────────────┐   │
-│  │            DUT: axi_ram (512MB)                           │   │
-│  │            [From Ariane AXI Components]                   │   │
-│  │  ┌─────────────────────────────────────────────────────┐  │   │
-│  │  │  AXI Demux & Burst Splitter                         │  │   │
-│  │  │  • axi_demux → axi_demux_simple                     │  │   │
-│  │  │  • axi_burst_splitter (counters + ax_chan)          │  │   │
-│  │  │  • axi_atop_filter → axi_fifo                       │  │   │
-│  │  └────────┬────────────────────────────────────────────┘  │   │
-│  │           │                                                │   │
-│  │           ▼                                                │   │
-│  │  ┌─────────────────────────────────────────────────────┐  │   │
-│  │  │  AXI-to-AXI-Lite Converter                          │  │   │
-│  │  │  • axi_to_axi_lite (protocol conversion)            │  │   │
-│  │  │  • axi_to_axi_lite_id_reflect                       │  │   │
-│  │  │  • axi_err_slv (error slave)                        │  │   │
-│  │  └────────┬────────────────────────────────────────────┘  │   │
-│  │           │                                                │   │
-│  │           ▼                                                │   │
-│  │  ┌─────────────────────────────────────────────────────┐  │   │
-│  │  │  Simple Memory Interface                            │  │   │
-│  │  │  • axi_to_simple_if (final conversion)              │  │   │
-│  │  │  • Direct memory array access                       │  │   │
-│  │  │  • Supporting modules: fifo_v3, id_queue,           │  │   │
-│  │  │    spill_register, stream_register                  │  │   │
-│  │  └─────────────────────────────────────────────────────┘  │   │
-│  └───────────────────────────────────────────────────────────┘   │
-│                    │ AXI4 Protocol (Pin 4: resp_o)               │
-│                    ▼                                              │
-│  ┌───────────────────────────────────────────────────────────┐   │
-│  │  Response Checker                                         │   │
-│  │  • Handshake verification (all 5 channels)                │   │
-│  │  • Data integrity checking                                │   │
-│  │  • Error response validation (OKAY/SLVERR/DECERR)        │   │
-│  │  • Timeout detection (100 cycle watchdog)                 │   │
-│  └───────────────────────────────────────────────────────────┘   │
-└──────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────┐
+│   VERIFICATION TESTBENCH            │
+│                                     │
+│   • Randomized Transaction Gen      │
+│   • AXI4 Protocol Driver            │
+│   • Independent Channel Control     │
+│                                     │
+└──────────────┬──────────────────────┘
+               │
+               │ AXI4 Interface
+               │ • Request: AW, W, AR
+               │ • Response: B, R
+               │ • Handshakes: valid/ready
+               ▼
+┌──────────────────────────────────────┐
+│   DUT: AXI RAM (512MB)               │
+│                                      │
+│   ┌────────────────────────────┐     │
+│   │  AXI Protocol Stack        │     │
+│   │  • Demux & Burst Splitter  │     │
+│   │  • AXI → AXI-Lite Convert  │     │
+│   │  • AXI-Lite → Memory Array │     │
+│   │  (20+ RTL Modules)         │     │
+│   └────────────────────────────┘     │
+│                                      │
+└──────────────┬───────────────────────┘
+               │
+               │ AXI4 Response
+               │ • Data & Status
+               │ • Error Codes
+               │ • Transaction Complete
+               ▼
+┌──────────────────────────────────────┐
+│   RESPONSE CHECKER                   │
+│                                      │
+│   • Data Integrity Verification      │
+│   • Timeout Detection (100 cycles)   │
+│   • Error Handling                   │
+│   • Pass/Fail Reporting              │
+│                                      │
+└──────────────────────────────────────┘
 
 Pin 1: clk_i (100MHz)          Pin 2: rst_ni (Active-low reset)
 Pin 3: req_i (AXI4 M→S)        Pin 4: resp_o (AXI4 S→M)
