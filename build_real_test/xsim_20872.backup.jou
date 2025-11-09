@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Oct 27 19:45:10 2025
+# Process ID: 20872
+# Current directory: C:/SPB_Data/rv64g_soc/build_real_test
+# Command line: xsim.exe -log ../log/real_axi_ram_test.txt -mode tcl -source {xsim.dir/work.real_axi_ram_test/xsim_script.tcl}
+# Log file: C:/SPB_Data/rv64g_soc/build_real_test/../log/real_axi_ram_test.txt
+# Journal file: C:/SPB_Data/rv64g_soc/build_real_test\xsim.jou
+# Running On        :DESKTOP-UBAV8JD
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+# CPU Frequency     :2304 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :16887 MB
+# Swap memory       :9336 MB
+# Total Virtual     :26224 MB
+# Available Virtual :7259 MB
+#-----------------------------------------------------------
+source xsim.dir/work.real_axi_ram_test/xsim_script.tcl
+run -all

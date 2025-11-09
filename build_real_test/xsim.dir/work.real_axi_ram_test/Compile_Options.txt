@@ -1,0 +1,1 @@
+"real_axi_ram_test" --timescale "1ns/1ps" --debug "wave" --log "../log/elab_real.txt" 

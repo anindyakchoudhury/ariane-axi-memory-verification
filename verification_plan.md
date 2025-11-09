@@ -238,8 +238,7 @@ This document describes the verification strategy and test coverage for the AXI 
 
 ---
 ## Simulation Results
-- To be Updated
-- Will write a sh file to run the test, won't mess up the makefile
+- All Tests Passed
 
 ---
 

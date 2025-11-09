@@ -1,0 +1,127 @@
+
+****** xsim v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sun Nov  9 12:59:22 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/work.real_axi_ram_test/xsim_script.tcl
+# xsim {work.real_axi_ram_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+[7;38m----------- FRONT DOOR ONLY TEST STARTED -----------[0m
+[INFO] All memory access through AXI protocol (Pin 3 & 4)
+[INFO] No back door access - production verification
+[INFO] Using RANDOMIZED test patterns
+[65000] Reset deasserted - Memory model ready
+
+[TEST 1] Front Door Byte Access (8-bit via AXI) - RANDOMIZED
+  [PASS] Iteration 0: Byte access at 0x0000000000003524 - wrote 0x81, read 0x81
+  [PASS] Iteration 1: Byte access at 0x000000000000d609 - wrote 0x63, read 0x63
+  [PASS] Iteration 2: Byte access at 0x0000000000007b0d - wrote 0x8d, read 0x8d
+  [PASS] Iteration 3: Byte access at 0x0000000000008465 - wrote 0x12, read 0x12
+  [PASS] Iteration 4: Byte access at 0x000000000000e301 - wrote 0x0d, read 0x0d
+  [PASS] Iteration 5: Byte access at 0x000000000000f176 - wrote 0x3d, read 0x3d
+  [PASS] Iteration 6: Byte access at 0x00000000000057ed - wrote 0x8c, read 0x8c
+  [PASS] Iteration 7: Byte access at 0x000000000000e9f9 - wrote 0xc6, read 0xc6
+  [PASS] Iteration 8: Byte access at 0x00000000000084c5 - wrote 0xaa, read 0xaa
+  [PASS] Iteration 9: Byte access at 0x000000000000f7e5 - wrote 0x77, read 0x77
+
+[TEST 2] Front Door Halfword Access (16-bit via AXI) - RANDOMIZED
+  [PASS] Iteration 0: Halfword access at 0x000000000000d612 - wrote 0xdb8f, read 0xdb8f
+  [PASS] Iteration 1: Halfword access at 0x00000000000069f2 - wrote 0x96ce, read 0x96ce
+  [PASS] Iteration 2: Halfword access at 0x0000000000007ae8 - wrote 0x4ec5, read 0x4ec5
+  [PASS] Iteration 3: Halfword access at 0x000000000000495c - wrote 0x28bd, read 0x28bd
+  [PASS] Iteration 4: Halfword access at 0x000000000000582c - wrote 0x2665, read 0x2665
+  [PASS] Iteration 5: Halfword access at 0x0000000000006262 - wrote 0x870a, read 0x870a
+  [PASS] Iteration 6: Halfword access at 0x0000000000002280 - wrote 0x2120, read 0x2120
+  [PASS] Iteration 7: Halfword access at 0x00000000000045aa - wrote 0xcc9d, read 0xcc9d
+  [PASS] Iteration 8: Halfword access at 0x0000000000003e96 - wrote 0xb813, read 0xb813
+  [PASS] Iteration 9: Halfword access at 0x000000000000380c - wrote 0xd653, read 0xd653
+
+[TEST 3] Front Door Word Access (32-bit via AXI) - RANDOMIZED
+  [PASS] Iteration 0: Word access at 0x000000000000dd68 - wrote 0xeaa62ad5, read 0xeaa62ad5
+  [PASS] Iteration 1: Word access at 0x0000000000004a00 - wrote 0xd7563eae, read 0xd7563eae
+  [PASS] Iteration 2: Word access at 0x000000000000e91c - wrote 0xe7c572cf, read 0xe7c572cf
+  [PASS] Iteration 3: Word access at 0x0000000000004920 - wrote 0x0509650a, read 0x0509650a
+  [PASS] Iteration 4: Word access at 0x0000000000000ac8 - wrote 0x9e314c3c, read 0x9e314c3c
+  [PASS] Iteration 5: Word access at 0x000000000000bdf0 - wrote 0x452e618a, read 0x452e618a
+  [PASS] Iteration 6: Word access at 0x000000000000b340 - wrote 0xec4b34d8, read 0xec4b34d8
+  [PASS] Iteration 7: Word access at 0x000000000000f378 - wrote 0xc48a1289, read 0xc48a1289
+  [PASS] Iteration 8: Word access at 0x0000000000000de8 - wrote 0x5b0265b6, read 0x5b0265b6
+  [PASS] Iteration 9: Word access at 0x000000000000f9c4 - wrote 0x571513ae, read 0x571513ae
+
+[TEST 4] Front Door Doubleword Access (64-bit via AXI) - RANDOMIZED
+  [PASS] Iteration 0: Doubleword access at 0x00000000000002b8 - wrote 0x85d79a0b150fdd2a, read 0x85d79a0b150fdd2a
+  [PASS] Iteration 1: Doubleword access at 0x000000000000be70 - wrote 0x27f2554f42f24185, read 0x27f2554f42f24185
+  [PASS] Iteration 2: Doubleword access at 0x0000000000006038 - wrote 0xbf23327e1d06333a, read 0xbf23327e1d06333a
+  [PASS] Iteration 3: Doubleword access at 0x0000000000004b10 - wrote 0x6c9c4bd978d99bf1, read 0x6c9c4bd978d99bf1
+  [PASS] Iteration 4: Doubleword access at 0x0000000000000760 - wrote 0x4fa1559f2635fb4c, read 0x4fa1559f2635fb4c
+  [PASS] Iteration 5: Doubleword access at 0x000000000000a188 - wrote 0xdbcd60b77c6da9f8, read 0xdbcd60b77c6da9f8
+  [PASS] Iteration 6: Doubleword access at 0x0000000000005698 - wrote 0xadcbc05bae7d945c, read 0xadcbc05bae7d945c
+  [PASS] Iteration 7: Doubleword access at 0x0000000000003788 - wrote 0xe8233ed0a4ae3249, read 0xe8233ed0a4ae3249
+  [PASS] Iteration 8: Doubleword access at 0x000000000000c0d0 - wrote 0x4b212f96a8c7fc51, read 0x4b212f96a8c7fc51
+  [PASS] Iteration 9: Doubleword access at 0x0000000000007f08 - wrote 0x6457edc8e12ccec2, read 0x6457edc8e12ccec2
+
+[TEST 5] Front Door Write-Read Consistency (via AXI) - RANDOMIZED
+  [INFO] Iteration 0: Writing 0x090cdb121ef2ed3d to address 0x0000000000005a70 via AXI
+  [INFO] Iteration 0: Reading back from address 0x0000000000005a70 via AXI
+  [PASS] Iteration 0: Write-Read consistency verified: 0x090cdb121ef2ed3d
+  [INFO] Iteration 1: Writing 0x1cd9e73936e5816d to address 0x0000000000000078 via AXI
+  [INFO] Iteration 1: Reading back from address 0x0000000000000078 via AXI
+  [PASS] Iteration 1: Write-Read consistency verified: 0x1cd9e73936e5816d
+  [INFO] Iteration 2: Writing 0x42d92f85e9ebf6d3 to address 0x0000000000008f18 via AXI
+  [INFO] Iteration 2: Reading back from address 0x0000000000008f18 via AXI
+  [PASS] Iteration 2: Write-Read consistency verified: 0x42d92f85e9ebf6d3
+  [INFO] Iteration 3: Writing 0x248b4b492dda595b to address 0x0000000000008878 via AXI
+  [INFO] Iteration 3: Reading back from address 0x0000000000008878 via AXI
+  [PASS] Iteration 3: Write-Read consistency verified: 0x248b4b492dda595b
+  [INFO] Iteration 4: Writing 0x2c156358150caf2a to address 0x000000000000ae38 via AXI
+  [INFO] Iteration 4: Reading back from address 0x000000000000ae38 via AXI
+  [PASS] Iteration 4: Write-Read consistency verified: 0x2c156358150caf2a
+  [INFO] Iteration 5: Writing 0xce2ff29cc71a0c8e to address 0x0000000000003880 via AXI
+  [INFO] Iteration 5: Reading back from address 0x0000000000003880 via AXI
+  [PASS] Iteration 5: Write-Read consistency verified: 0xce2ff29cc71a0c8e
+  [INFO] Iteration 6: Writing 0x39961773937dbc26 to address 0x00000000000099f8 via AXI
+  [INFO] Iteration 6: Reading back from address 0x00000000000099f8 via AXI
+  [PASS] Iteration 6: Write-Read consistency verified: 0x39961773937dbc26
+  [INFO] Iteration 7: Writing 0xd9d292b39799a82f to address 0x000000000000b4a0 via AXI
+  [INFO] Iteration 7: Reading back from address 0x000000000000b4a0 via AXI
+  [PASS] Iteration 7: Write-Read consistency verified: 0xd9d292b39799a82f
+  [INFO] Iteration 8: Writing 0x7bf8fdf722290d44 to address 0x0000000000005658 via AXI
+  [INFO] Iteration 8: Reading back from address 0x0000000000005658 via AXI
+  [PASS] Iteration 8: Write-Read consistency verified: 0x7bf8fdf722290d44
+  [INFO] Iteration 9: Writing 0x2d28db5af3091ae6 to address 0x00000000000036c8 via AXI
+  [INFO] Iteration 9: Reading back from address 0x00000000000036c8 via AXI
+  [PASS] Iteration 9: Write-Read consistency verified: 0x2d28db5af3091ae6
+
+[TEST 6] Front Door Sequential Operations (64 transactions via AXI) - RANDOMIZED
+  [INFO] Writing 64 randomized doublewords via AXI protocol...
+  [INFO] Reading and verifying 64 doublewords via AXI protocol...
+  [PASS] 64 sequential doubleword operations verified
+
+[TEST 7] Front Door Address Alignment Tests (via AXI) - RANDOMIZED
+  [INFO] Testing aligned accesses...
+  [PASS] 8-byte aligned access with random data 0x85e51e0bfd8b6afb
+  [PASS] 4-byte aligned access with random data 0xf78290ef
+  [PASS] 2-byte aligned access with random data 0x3dc9
+
+[TEST 8] Front Door Byte Strobe Patterns (via AXI) - RANDOMIZED
+  [PASS] Full strobe (0xFF) with random data 0xbab148751b60e536
+  [PASS] Partial strobe (0x0F) - lower 4 bytes with random data 0xc7e8568f
+
+[TEST 9] Comprehensive Random Transactions - FULLY RANDOMIZED
+  [INFO] Completed 0 random transactions
+  [INFO] Completed 10 random transactions
+  [INFO] Completed 20 random transactions
+  [INFO] Completed 30 random transactions
+  [INFO] Completed 40 random transactions
+  [PASS] All 50 random transactions passed
+[7;32m[PASS] All front door tests passed![0m
+[INFO] Complete AXI stack verified: axi_ram → axi_to_simple_if → axi_to_axi_lite → axi_fifo
+[7;38m------------ FRONT DOOR ONLY TEST ENDED ------------[0m
+$finish called at time : 17065 ns : File "C:/SPB_Data/rv64g_soc/testbench/real_axi_ram_test.sv" Line 246
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Nov  9 12:59:33 2025...

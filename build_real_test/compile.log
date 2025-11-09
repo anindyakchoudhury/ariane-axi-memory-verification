@@ -1,0 +1,52 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/include/common_cells/registers.svh" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/package/axi_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/package/cf_math_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/package/ariane_axi_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/lzc.sv" into library work
+INFO: [VRFC 10-311] analyzing module lzc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/onehot_to_bin.sv" into library work
+INFO: [VRFC 10-311] analyzing module onehot_to_bin
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/rr_arb_tree.sv" into library work
+INFO: [VRFC 10-311] analyzing module rr_arb_tree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/counter.sv" into library work
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/delta_counter.sv" into library work
+INFO: [VRFC 10-311] analyzing module delta_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/spill_register_flushable.sv" into library work
+INFO: [VRFC 10-311] analyzing module spill_register_flushable
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/spill_register.sv" into library work
+INFO: [VRFC 10-311] analyzing module spill_register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/stream_register.sv" into library work
+INFO: [VRFC 10-311] analyzing module stream_register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/fifo_v3.sv" into library work
+INFO: [VRFC 10-311] analyzing module fifo_v3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/id_queue.sv" into library work
+INFO: [VRFC 10-311] analyzing module id_queue
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/axi_demux_simple.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_demux_simple
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/axi_demux_id_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_demux_id_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/axi_burst_splitter_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_burst_splitter_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/axi_burst_splitter_ax_chan.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_burst_splitter_ax_chan
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/axi_burst_splitter.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_burst_splitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/axi_atop_filter.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_atop_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/axi_demux.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_demux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/axi_err_slv.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_err_slv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/axi_to_axi_lite_id_reflect.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_to_axi_lite_id_reflect
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/axi_to_axi_lite.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_to_axi_lite
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/axi_fifo.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/axi_to_simple_if.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_to_simple_if
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/source/axi_ram.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SPB_Data/rv64g_soc/testbench/real_axi_ram_test.sv" into library work
+INFO: [VRFC 10-311] analyzing module real_axi_ram_test

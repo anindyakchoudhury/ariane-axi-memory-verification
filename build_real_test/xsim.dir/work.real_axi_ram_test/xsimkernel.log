@@ -1,0 +1,7 @@
+Running: xsim.dir/work.real_axi_ram_test/xsimk.exe -runall -simmode gui -wdb work.real_axi_ram_test.wdb -simrunnum 0 -socket 51070
+Design successfully loaded
+Design Loading Memory Usage: 9008 KB (Peak: 9008 KB)
+Design Loading CPU Usage: 124 ms
+Simulation completed
+Simulation Memory Usage: 12332 KB (Peak: 12332 KB)
+Simulation CPU Usage: 2139 ms
